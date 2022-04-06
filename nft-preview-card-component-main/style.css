@@ -8,12 +8,18 @@ body{
   sans-serif;
   display: flex;
   background-color: hsl(217, 54%, 11%);
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+
+box-shadow: -2px 3px 15px 13px #000000b6;
 }
 .container{
   max-width:300px;
   margin: 0 auto;
 }
 .wrapper{
+  box-shadow: -2px 3px 15px 13px #000000b6;
   margin:2rem 1rem;
   padding: 18px;
   background-color: hsl(216, 50%, 16%);
@@ -22,7 +28,81 @@ body{
 .img-top{
 border-radius: 17px;
 overflow:hidden;
+position:relative;
 }
 .img-top img{
   width:100%;
+  display: block;
+}
+.img-overlay{
+  position: absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width: 100%;
+  background-color:hsla(178, 100%, 50%,0.5);
+  display:none;
+}
+.img-overlay img{
+  position:absolute;
+  width:50px;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  
+}
+.img-top:hover .img-overlay{
+  display:block;
+}
+.text a{
+  color:white;
+  font-weight:400;
+  text-decoration:none;
+  padding: 20px 0;
+  font-size: 20px;
+  display: inline-block;
+}
+p{
+ color: hsl(215, 51%, 70%)
+}
+.text a:hover{
+  color:hsl(178, 100%, 50%)
+}
+.flex{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.ethis ,.days{
+display: flex;
+align-items: center;
+}
+.ethis p{
+  padding-left: 8px;
+}
+.days p{
+  padding-left: 8px;
+}
+hr{
+  border-color:hsl(215, 32%, 27%)
+}
+.img-bottom{
+
+ padding-top:10px;
+ display: flex;
+ align-items: center;
+}
+.author p{
+padding-left: 8px;
+
+}
+
+.author img{
+ 
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border:2px solid #fff;
+  
 }
